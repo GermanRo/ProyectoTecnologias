@@ -20,6 +20,9 @@ import { ProfileComponent } from './components/users/profile/profile.component';
 import { RegisterComponent } from './components/users/register/register.component';
 import { Page404Component } from './components/page404/page404.component';
 import {FormsModule} from '@angular/forms';
+import {AngularFireAuth} from '@angular/fire/auth';
+
+
 
 @NgModule({
   declarations: [
@@ -43,7 +46,7 @@ import {FormsModule} from '@angular/forms';
     FormsModule
 
   ],
-  providers: [],
+  providers: [AngularFireAuth],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
