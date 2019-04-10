@@ -21,7 +21,7 @@ import { RegisterComponent } from './components/users/register/register.componen
 import { Page404Component } from './components/page404/page404.component';
 import {FormsModule} from '@angular/forms';
 import {AngularFireAuth} from '@angular/fire/auth';
-
+import {AngularFireStorageModule} from '@angular/fire/storage';
 
 
 @NgModule({
@@ -43,7 +43,8 @@ import {AngularFireAuth} from '@angular/fire/auth';
     AngularFireDatabaseModule,
     NgbModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    AngularFireStorageModule
 
   ],
   providers: [AngularFireAuth],
