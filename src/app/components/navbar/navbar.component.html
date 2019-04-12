@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
-  <a class="navbar-brand" routerLink="/">{{app_name}}</a>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top ">
+  <a class="navbar-brand text-body" routerLink="/">{{app_name}}</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar"
     aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -8,30 +8,40 @@
   <div class="collapse navbar-collapse" id="mainNavbar">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item" >
-        <a class="nav-link" routerLink="/offers">Inicio
+        <a class="nav-link text-body" routerLink="/offers">Inicio
         </a>
       </li>
-      LOGGED: {{isLogged}}
+      Logged: {{isLogged}}
     </ul>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item" *ngIf="!isLogged">
-        <a class="nav-link" routerLink="/user/register">Register
+        <a class="nav-link text-body" routerLink="/user/register">Registro
         </a>
       </li>
       <li class="nav-item" *ngIf="isLogged">
-        <a class="nav-link" routerLink="/user/profile">Profile</a>
+        <a class="nav-link text-body" routerLink="/user/profile">Perfil</a>
       </li>
       <li class="nav-item" *ngIf="isLogged">
-        <a class="nav-link" routerLink="/admin/list-books">List Books</a>
+        <a class="nav-link text-body" routerLink="/admin/list-books">Comentarios</a>
       </li>
       <li class="nav-item" *ngIf="!isLogged">
-        <a class="nav-link" routerLink="/user/login">Login
+        <a class="nav-link text-body" routerLink="/user/login">Login
         </a>
       </li>
       <li class="nav-item" *ngIf="isLogged">
-        <a href="#" class="nav-link" (click)="onLogout()">Logout
+        <a href="#" class="nav-link text-body" (click)="onLogout()">Logout
         </a>
       </li>
     </ul>
   </div>
 </nav>
+
+<div class="jumbotron">
+  <h1 class="display-4">Noticias</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Más</a>
+  </p>
+</div>
