@@ -1,7 +1,7 @@
+import { ActivatedRoute, Params } from '@angular/router';
 import { InfoInterface } from './../../models/Info';
 import { DataApiService } from './../../services/data-api.service';
 import { Component, OnInit } from '@angular/core';
-
 
 @Component({
   selector: 'app-details',
@@ -10,13 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailsComponent implements OnInit {
 
-  constructor(private dataApi: DataApiService) { }
-  public inf: InfoInterface;
+  constructor(private dataApi: DataApiService, private route: ActivatedRoute) { }
+  public inf: InfoInterface = {};
 
   ngOnInit() {
-    const idInfo = 'DNzuXpNhk8nteJYebKWu';
+    const idInfo = this.route.snapshot.params['id'];
+    this.getDetails(idInfo);
+  }
+
+  getDetails(idInfo: string): void {
     this.dataApi.getOneinfo(idInfo).subscribe(inf => {
-      console.log(inf);
+      this.inf = inf;
     });
   }
 
