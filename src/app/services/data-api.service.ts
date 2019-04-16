@@ -16,17 +16,32 @@ export class DataApiService {
   }
   private infoCollection: AngularFirestoreCollection<InfoInterface>;
   private info: Observable<InfoInterface[]>;
+  private infoDoc: AngularFirestoreDocument<InfoInterface>;
+  private inf: Observable<InfoInterface>;
   //Metodos para trabajar con la informacion 
   getInfo() {
-    return this.info=this.infoCollection.snapshotChanges()
-    .pipe(map(changes=>{
-      return changes.map(action=>{
-        const data = action.payload.doc.data() as InfoInterface;
-        data.id= action.payload.doc.id;
+    return this.info = this.infoCollection.snapshotChanges()
+      .pipe(map(changes => {
+        return changes.map(action => {
+          const data = action.payload.doc.data() as InfoInterface;
+          data.id = action.payload.doc.id;
+          return data;
+        });
+      }));
+  }
+  getOneinfo(idInfo: string) {
+    this.infoDoc = this.afs.doc<InfoInterface>(`infos/${idInfo}`);
+    return this.inf = this.infoDoc.snapshotChanges().pipe(map(action => {
+      if (action.payload.exists == false) {
+        return null;
+      } else {
+        const data = action.payload.data() as InfoInterface;
+        data.id = action.payload.id;
         return data;
-      });
+      }
     }));
-   }
+  }
+
   addInfo() { }
   updateInfo() { }
   deleteInfo() { }

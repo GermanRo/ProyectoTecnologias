@@ -23,6 +23,7 @@ import { Page404Component } from './components/page404/page404.component';
 import {FormsModule} from '@angular/forms';
 import {AngularFireAuth} from '@angular/fire/auth';
 import {AngularFireStorageModule} from '@angular/fire/storage';
+import { DetailsComponent } from './components/details/details.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import {AngularFireStorageModule} from '@angular/fire/storage';
     InfoComponent,
     ProfileComponent,
     RegisterComponent,
-    Page404Component
+    Page404Component,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
