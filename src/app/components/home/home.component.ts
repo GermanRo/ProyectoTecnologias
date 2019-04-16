@@ -9,12 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   constructor(private dataApi: DataApiService) { }
-public info=[];
-public inf='';
+  public info = [];
+  public inf = '';
 
   ngOnInit() {
-    this.dataApi.getInfo().subscribe(info=>{
-      console.log('INFO',info);
+    this.dataApi.getInfo().subscribe(info => {
+      console.log('INFO', info);
+      this.info = info;
     })
   }
 

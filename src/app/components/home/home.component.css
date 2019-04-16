@@ -1,22 +1,22 @@
-#books {
+#info {
     border-radius: 0.25rem;
     background: #f9f9f9 !important;
   }
   section {
     padding: 20px 0;
   }
-  #books .card {
+  #info .card {
     border: none;
     background: #fff;
   }
-  .card_book {
+  .card_info {
     position: relative;
     -webkit-transform: rotateY(0deg);
     z-index: 2;
     margin-bottom: 30px;
   }
   
-  .card_book .card {
+  .card_info .card {
     min-height: 312px;
   }
   
@@ -30,7 +30,7 @@
     cursor: pointer;
   }
   
-  .card_book .card .card-body img {
+  .card_info .card .card-body img {
     width: 120px;
     height: 120px;
     border-radius: 50%;

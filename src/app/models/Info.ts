@@ -6,4 +6,5 @@ export interface InfoInterface{
     lugar?: string;
     autor?: string;
     id?: string;
+    imagen?: string;
 }
