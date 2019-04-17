@@ -1,13 +1,15 @@
 #info {
     border-radius: 0.25rem;
     background: #f9f9f9 !important;
+    
   }
   section {
     padding: 20px 0;
+    
   }
   #info .card {
     border: none;
-    background: #fff;
+    background: #f9f9f9;
   }
   .card_info {
     position: relative;

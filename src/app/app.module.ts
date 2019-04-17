@@ -25,6 +25,7 @@ import {AngularFireAuth} from '@angular/fire/auth';
 import {AngularFireStorageModule} from '@angular/fire/storage';
 import { DetailsComponent } from './components/details/details.component';
 import { ListComponent } from './components/admin/list/list.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { ListComponent } from './components/admin/list/list.component';
     RegisterComponent,
     Page404Component,
     DetailsComponent,
-    ListComponent
+    ListComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
