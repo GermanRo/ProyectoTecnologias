@@ -19,11 +19,15 @@
   .card_info .card {
     min-height: 312px;
   }
+  .card-title{
+    margin-top: 3rem;
+  }
   
   p.card-text,
   h4.card-title {
     min-height: 96px !important;
-  }
+   text-align: center;
+    }
   
   .card-title {
     color: #007bff;
@@ -31,9 +35,9 @@
   }
   
   .card_info .card .card-body img {
-    width: 120px;
+    width: 150px;
     height: 120px;
-    border-radius: 50%;
+    border-radius: 10%;
   }
   
   div.container-precio-idioma{

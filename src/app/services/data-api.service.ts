@@ -42,8 +42,17 @@ export class DataApiService {
     }));
   }
 
-  addInfo() { }
-  updateInfo() { }
-  deleteInfo() { }
+  addInfo(inf:InfoInterface):void {
+    this.infoCollection.add(inf);
+  }
+  updateInfo(inf:InfoInterface):void { 
+    let idInfo=inf.id;
+    this.infoDoc=this.afs.doc<InfoInterface>(`info/${idInfo}`);
+    this.infoDoc.update(inf);
+  }
+  deleteInfo(idInfo: string):void {
+    this.infoDoc=this.afs.doc<InfoInterface>(`info/${idInfo}`);
+    this.infoDoc.delete();
+   }
 
 }
