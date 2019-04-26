@@ -1,17 +1,19 @@
 <section id="info" class="mt-5">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let inf of info">
-        <div class="card_info">
-          <div class="card">
-            <div class="card-body text-center">
+      <div class="col-xs-12 col-sm-6 col-md-12" *ngFor="let inf of info">
+        <div class="">
+          <div class="">
+            <div class="card-body text-right">
               <p>
                 <img class="img-fluid" src="{{inf.imagen}}" alt="{{inf.titulo}}">
               </p>
+              <div class = "card-body col-md-12">
               <h4 routerLink="/inf/{{inf.id}}" class="card-title">{{inf.titulo}}</h4>
               <p class="card-text">
                 {{inf.descripcion}}
               </p>
+            </div>
               <div class="container-precio-idioma">
                 <p class="badge badge-info">
                   {{inf.autor}}
@@ -28,5 +30,5 @@
     </div>
   </div>
 </section>
-
+<app-carousel></app-carousel>
 <app-coments></app-coments>
