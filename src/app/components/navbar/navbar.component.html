@@ -8,7 +8,7 @@
   <div class="collapse navbar-collapse" id="mainNavbar">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item" >
-        <a class="nav-link text-body" routerLink="/offers">Inicio
+        <a class="nav-link text-body" routerLink="">Inicio
         </a>
       </li>
       Logged: {{isLogged}}
@@ -22,7 +22,10 @@
         <a class="nav-link text-body" routerLink="/user/profile">Perfil</a>
       </li>
       <li class="nav-item" *ngIf="isLogged">
-        <a class="nav-link text-body" routerLink="/admin/list-books">Comentarios</a>
+        <a class="nav-link text-body" routerLink="nosotros">Nosotros</a>
+      </li>
+      <li class="nav-item" *ngIf="isLogged">
+        <a class="nav-link text-body" routerLink="contacto">Contáctenos</a>
       </li>
       <li class="nav-item" *ngIf="!isLogged">
         <a class="nav-link text-body" routerLink="/user/login">Login

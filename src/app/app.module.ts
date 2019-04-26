@@ -1,3 +1,5 @@
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { ComentsComponent } from './components/coments/coments.component';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -29,7 +31,6 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +46,8 @@ import { NosotrosComponent } from './components/nosotros/nosotros.component';
     ListComponent,
     CarouselComponent,
     NosotrosComponent,
+    ComentsComponent,
+    ContactoComponent
    
   ],
   imports: [
