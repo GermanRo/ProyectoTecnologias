@@ -18,9 +18,10 @@ const routes: Routes = [ //PARAUSAR LAS RUTAS PARA ACCEDER
 {path:'inf/:id', component: DetailsComponent},
 {path:'user/register', component: RegisterComponent},
 {path:'user/profile', component: ProfileComponent},
-{path: '**' , component: Page404Component},
 {path: 'nosotros' , component: NosotrosComponent},
-{path: 'contacto' , component: ContactoComponent}
+{path: 'contacto' , component: ContactoComponent},
+{path: '**' , component: Page404Component},
+
 ];
 
 @NgModule({
