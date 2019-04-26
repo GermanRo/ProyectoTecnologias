@@ -1,24 +1,13 @@
- *{
-      margin: 0;
-      padding: 0;
-      box-sizing:border-box;
-  }
-  
-  :focus{
-      outline: none;
-  }
-  
-  body{
-      background: #DBDBDB;
-      font-family: 'Open sans';
-  }
+
   
   /* FORMULARIO =================================== */
   
   .form_wrap{
-      width: 1050px;
-      height: 530px;
-      margin: 50px auto;
+      width: 70rem;
+      height: 35rem;
+      margin-top: 7rem;
+      margin-left: 9rem;
+      margin-right: 3rem;
       display: flex;
   
       background: #fff;

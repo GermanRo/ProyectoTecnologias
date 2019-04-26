@@ -47,7 +47,7 @@ export class LoginComponent implements OnInit {
 
 //RUTA A DONDE SE REDIRIGE
   onLoginRedirect(): void{
-    this.router.navigate(['home']);
+    this.router.navigate(['']);
   }
 
 }

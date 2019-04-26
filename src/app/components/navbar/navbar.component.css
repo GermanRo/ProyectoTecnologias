@@ -1,13 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Anton');
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 nav{
-    background-color:#87CEEB;
+    background-color:#24429E;
+    
 }
 .navbar-brand{
-    font-family: 'Anton', sans-serif;
+    font-family:  'Poppins', sans-serif;
 }
 
 
 a {
     font-weight: 500;
+    color:white;
+    font-size: 1.2rem;
+}
+a.ti{
+    font-size: 2rem;
+    letter-spacing: 1px;
 }

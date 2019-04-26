@@ -1,11 +1,27 @@
-section{
-    margin-top: 3rem;
+@import url('https://fonts.googleapis.com/css?family=Gugi');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
+
+section{
+    margin-top: 4rem;
+   background-color: rgba(176, 193, 243,0.5);
 }
 .tar{
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.2rem;
+
 }
+
+
+
+.card-title{
+    text-shadow: 2px 2px 2px #92ABF8;
+    font-family: 'Gugi', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
