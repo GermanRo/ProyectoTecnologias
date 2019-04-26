@@ -26,6 +26,8 @@ import {AngularFireStorageModule} from '@angular/fire/storage';
 import { DetailsComponent } from './components/details/details.component';
 import { ListComponent } from './components/admin/list/list.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { NosotrosComponent } from './components/nosotros/nosotros.component';
+
 
 
 @NgModule({
@@ -41,7 +43,9 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     Page404Component,
     DetailsComponent,
     ListComponent,
-    CarouselComponent
+    CarouselComponent,
+    NosotrosComponent,
+   
   ],
   imports: [
     BrowserModule,
