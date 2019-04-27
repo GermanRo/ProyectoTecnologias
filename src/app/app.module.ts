@@ -30,6 +30,7 @@ import { ListComponent } from './components/admin/list/list.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { NoticiasComponent } from './components/noticias/noticias.component';
+import { MapaComponent } from './components/mapa/mapa.component';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { NoticiasComponent } from './components/noticias/noticias.component';
     NosotrosComponent,
     ComentsComponent,
     ContactoComponent,
-    NoticiasComponent
+    NoticiasComponent,
+    MapaComponent
    
   ],
   imports: [

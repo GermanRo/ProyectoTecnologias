@@ -1,64 +1,54 @@
 <div class="comments-container">
-		<h1>Comentarios <br><a href="http://localhost:4200/">ver más!</a></h1>
+	<h1>Comentarios</h1>
+	<br>
+	<form>
+		<div class="form-group row">
+			<div class="col-md-10">
+				<input type="text">
+			</div>
+		</div>
+		<br>
+		<div class="form-group">
+			<h5>Seleccionar Imagen</h5>
+			<input type="file" accept=".png,.jpg" (change)="onUpload($event)">
+		</div>
+		<br>
+		<div class="form-group row">
+			<div class="col-sm-10">
+				<button type="submit" class="btn btn-primary"> Aceptar </button>
+			</div>
+		</div>
 
-		<ul id="comments-list" class="comments-list">
-			<li>
-				<div class="comment-main-level">
-					<!-- Avatar -->
-					<div class="comment-avatar"><img src="https://i.imgur.com/pBcut2e.jpg" alt=""></div>
-					<!-- Contenedor del Comentario -->
-					<div class="comment-box">
-						<div class="comment-head">
-							<h6 class="comment-name by-author"><a href="http://creaticode.com/blog">Pepito Perez</a></h6>
-							<span>Hace x minutos</span>
-							<i class="fa fa-reply"></i>
-							<i class="fa fa-heart"></i>
-						</div>
-						<div class="comment-content">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
-						</div>
+
+	</form>
+
+
+
+
+
+
+	<ul id="comments-list" class="comments-list">
+		<li>
+			<div class="comment-main-level">
+				<!-- Avatar -->
+				<div class="comment-avatar"><img src="https://i.imgur.com/pBcut2e.jpg" alt=""></div>
+				<!-- Contenedor del Comentario -->
+				<div class="comment-box">
+					<div class="comment-head">
+						<h6 class="comment-name by-author"><a href="http://creaticode.com/blog">Pepito Perez</a></h6>
+						<span>Hace x minutos</span>
+						<i class="fa fa-reply"></i>
+						<i class="fa fa-heart"></i>
+					</div>
+					<div class="comment-content">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium
+						vitae, praesentium optio, sapiente distinctio illo?
 					</div>
 				</div>
-				<!-- Respuestas de los comentarios -->
-				<ul class="comments-list reply-list">
-					<li>
-						<!-- Avatar -->
-						<div class="comment-avatar"><img src="https://i.imgur.com/7wQ61EW.jpg" alt=""></div>
-						<!-- Contenedor del Comentario -->
-						<div class="comment-box">
-							<div class="comment-head">
-								<h6 class="comment-name"><a href="http://creaticode.com/blog">Rosa Maria</a></h6>
-								<span>Hace x minutos</span>
-								<i class="fa fa-reply"></i>
-								<i class="fa fa-heart"></i>
-							</div>
-							<div class="comment-content">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
-							</div>
-						</div>
-					</li>
-
-					<li>
-						<!-- Avatar -->
-						<div class="comment-avatar"><img src="https://i.imgur.com/pBcut2e.jpg" alt=""></div>
-						<!-- Contenedor del Comentario -->
-						<div class="comment-box">
-							<div class="comment-head">
-								<h6 class="comment-name by-author"><a href="http://creaticode.com/blog">Pepito Perez</a></h6>
-								<span>Hace x minutos</span>
-								<i class="fa fa-reply"></i>
-								<i class="fa fa-heart"></i>
-							</div>
-							<div class="comment-content">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
-							</div>
-						</div>
-					</li>
-				</ul>
-			</li>
-
-			<li>
-				<div class="comment-main-level">
+			</div>
+			<!-- Respuestas de los comentarios -->
+			<ul class="comments-list reply-list">
+				<li>
 					<!-- Avatar -->
 					<div class="comment-avatar"><img src="https://i.imgur.com/7wQ61EW.jpg" alt=""></div>
 					<!-- Contenedor del Comentario -->
@@ -70,10 +60,51 @@
 							<i class="fa fa-heart"></i>
 						</div>
 						<div class="comment-content">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure
+							laudantium vitae, praesentium optio, sapiente distinctio illo?
 						</div>
 					</div>
+				</li>
+
+				<li>
+					<!-- Avatar -->
+					<div class="comment-avatar"><img src="https://i.imgur.com/pBcut2e.jpg" alt=""></div>
+					<!-- Contenedor del Comentario -->
+					<div class="comment-box">
+						<div class="comment-head">
+							<h6 class="comment-name by-author"><a href="http://creaticode.com/blog">Pepito Perez</a>
+							</h6>
+							<span>Hace x minutos</span>
+							<i class="fa fa-reply"></i>
+							<i class="fa fa-heart"></i>
+						</div>
+						<div class="comment-content">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure
+							laudantium vitae, praesentium optio, sapiente distinctio illo?
+						</div>
+					</div>
+				</li>
+			</ul>
+		</li>
+
+		<li>
+			<div class="comment-main-level">
+				<!-- Avatar -->
+				<div class="comment-avatar"><img src="https://i.imgur.com/7wQ61EW.jpg" alt=""></div>
+				<!-- Contenedor del Comentario -->
+				<div class="comment-box">
+					<div class="comment-head">
+						<h6 class="comment-name"><a href="http://creaticode.com/blog">Rosa Maria</a></h6>
+						<span>Hace x minutos</span>
+						<i class="fa fa-reply"></i>
+						<i class="fa fa-heart"></i>
+					</div>
+					<div class="comment-content">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium
+						vitae, praesentium optio, sapiente distinctio illo?
+					</div>
 				</div>
-			</li>
-		</ul>
-	</div>
+			</div>
+		</li>
+	</ul>
+</div>

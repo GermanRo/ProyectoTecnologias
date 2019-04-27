@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 /**
  * Oscuro: #283035
  * Azul: #03658c
@@ -11,6 +13,23 @@
  	-moz-box-sizing: border-box;
  	box-sizing: border-box;
  }
+
+ .comments-container{
+	 margin-top: 7rem !important;
+	 margin-bottom: 12rem !important;
+ }
+
+ h1{
+	font-family:  'Poppins', sans-serif;
+ }
+ button{
+	 width: 6rem;
+	 background-color: #03658c;
+ }
+ input{
+	 width: 50rem;
+ }
+
 
  a {
  	color: #03658c;

@@ -1,11 +1,11 @@
 @media (min-width: 18.75rem){
     .container {
-        max-width: 120rem;
+        max-width: 86rem;
     }}
   .container {
-    margin: auto;
-
+    margin: auto 2rem auto 2rem !important;
   }
+  
   
   .conte{
    margin-left: 20px;

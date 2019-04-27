@@ -1,3 +1,4 @@
+import { MapaComponent } from './components/mapa/mapa.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { ComentsComponent } from './components/coments/coments.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
@@ -20,6 +21,7 @@ const routes: Routes = [ //PARAUSAR LAS RUTAS PARA ACCEDER
 {path:'user/profile', component: ProfileComponent},
 {path: 'nosotros' , component: NosotrosComponent},
 {path: 'contacto' , component: ContactoComponent},
+{path: 'mapa' , component: MapaComponent},
 {path: '**' , component: Page404Component},
 
 ];

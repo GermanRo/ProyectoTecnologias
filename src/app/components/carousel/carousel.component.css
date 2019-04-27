@@ -1,7 +1,9 @@
 .bd-carousel{
-    width: 100rem;
-    height: 45rem;
-    margin: 7rem auto 20rem auto;
+    width: auto;
+    height: auto;
+    margin: 7rem auto 7rem auto;
+    padding-right: 3rem;
+    padding-left: 3rem;
     
 }
   .conte{
