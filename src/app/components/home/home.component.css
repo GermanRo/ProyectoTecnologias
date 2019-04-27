@@ -1,0 +1,45 @@
+<<<<<<< HEAD
+=======
+.container {
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+@media (min-width: 18.75rem){
+  .container{
+    max-width: 120rem;
+  }
+  
+}
+
+
+.conte{
+ margin-left: 1.25rem;
+ margin-right: 1.25rem;
+ margin-top: 1.5625rem;
+ margin-bottom: 1.5625rem;
+  text-align: justify;
+}
+h4.title{
+  font-weight: bold;
+  font-size: 1.875rem;
+  color: #007bff;
+  cursor: pointer;
+  margin-bottom: 0.625rem;
+  border-bottom: #007bff94 0.0625rem outset;
+  
+}
+.texto{
+  font-size: 1.0625rem;
+  cursor: text;
+  
+}
+
+.badge{
+  float: right;
+}
+.card{
+  -webkit-box-shadow: -4px 10px 39px -9px rgba(0,0,0,0.86);
+-moz-box-shadow: -4px 10px 39px -9px rgba(0,0,0,0.86);
+box-shadow: -4px 10px 39px -9px rgba(0,0,0,0.86);
+}
+>>>>>>> be2500656131602eac9efd7c9f2a3dd1f4380f83
