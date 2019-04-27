@@ -31,6 +31,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { NoticiasComponent } from './components/noticias/noticias.component';
 import { MapaComponent } from './components/mapa/mapa.component';
+import { BeneficiosComponent } from './components/beneficios/beneficios.component';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { MapaComponent } from './components/mapa/mapa.component';
     ComentsComponent,
     ContactoComponent,
     NoticiasComponent,
-    MapaComponent
+    MapaComponent,
+    BeneficiosComponent
    
   ],
   imports: [
