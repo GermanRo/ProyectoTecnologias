@@ -1,34 +1,33 @@
 .container {
-  margin: auto;
-  margin-top: 200px;
-  margin-bottom: 200px;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
 }
-@media (min-width: 300px){
-.container {
-    max-width: 1920px;
-}}
-.cuadro{
-  margin-bottom: 200px;
+@media (min-width: 18.75rem){
+  .container{
+    max-width: 120rem;
+  }
+  
 }
 
+
 .conte{
- margin-left: 20px;
- margin-right: 20px;
- margin-top: 25px;
- margin-bottom: 25px;
+ margin-left: 1.25rem;
+ margin-right: 1.25rem;
+ margin-top: 1.5625rem;
+ margin-bottom: 1.5625rem;
   text-align: justify;
 }
 h4.title{
   font-weight: bold;
-  font-size: 30px;
+  font-size: 1.875rem;
   color: #007bff;
   cursor: pointer;
-  margin-bottom: 10px;
-  border-bottom: #007bff94 1px outset;
+  margin-bottom: 0.625rem;
+  border-bottom: #007bff94 0.0625rem outset;
   
 }
 .texto{
-  font-size: 17px;
+  font-size: 1.0625rem;
   cursor: text;
   
 }
@@ -41,51 +40,3 @@ h4.title{
 -moz-box-shadow: -4px 10px 39px -9px rgba(0,0,0,0.86);
 box-shadow: -4px 10px 39px -9px rgba(0,0,0,0.86);
 }
-/*#info {
-    border-radius: 0.25rem;
-    background: #f9f9f9 !important;
-    
-  }
-  section {
-    padding: 20px 0;
-    
-  }
-  #info .card {
-    border: none;
-    background: #f9f9f9;
-  }
-  .card_info {
-    position: relative;
-    -webkit-transform: rotateY(0deg);
-    z-index: 2;
-    margin-bottom: 30px;
-  }
-  
-  .card_info .card {
-    min-height: 312px;
-  }
-  .card-title{
-    margin-top: 3rem;
-  }
-  
-  p.card-text,
-  h4.card-title {
-    min-height: 96px !important;
-   text-align: center;
-    }
-  
-  .card-title {
-    color: #007bff;
-    cursor: pointer;
-  }
-  
-  .card_info .card .card-body img {
-    width: 150px;
-    height: 120px;
-    border-radius: 10%;
-  }
-  
-  div.container-precio-idioma{
-    display: flex;
-    justify-content: space-between;
-  }*/

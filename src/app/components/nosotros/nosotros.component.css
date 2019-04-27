@@ -1,18 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Gugi');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
-
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 section{
-    margin-top: 4rem;
-   background-color: rgba(176, 193, 243,0.5);
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+ 
+   
+}
+.container{
+    
+}
+.card{
+    border-color: rgba(36, 67, 158, 0.719);
+    border-width: 0.04rem;
+    
+
+    -webkit-box-shadow: -4px 10px 39px -9px rgba(0,0,0,0.86);
+    -moz-box-shadow: -4px 10px 39px -9px rgba(0,0,0,0.86);
+    box-shadow: -4px 10px 39px -9px rgba(0,0,0,0.86);
+    
 }
 .tar{
-    margin-top: 1rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
     font-family: 'PT Sans', sans-serif;
     font-size: 1.2rem;
+    text-align: center;
+
+}
+p{
+    margin-top: 3rem;
 
 }
 
@@ -20,8 +40,26 @@ section{
 
 .card-title{
     text-shadow: 2px 2px 2px #92ABF8;
-    font-family: 'Gugi', cursive;
+    font-family:  'Poppins', sans-serif;
     font-size: 2.5rem;
     text-align: center;
 }
+.form-goup{
+    margin: auto;
+}
+
+.btn-social{
+   
+    text-align: center;
+    margin: 2rem auto auto auto;
+    text-overflow: ellipsis;
+    border-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    width: 8rem;
+      }
+
+
+.btn-facebook{
+    background: #3b5998;
+      }
 
