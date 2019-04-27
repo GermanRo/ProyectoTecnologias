@@ -29,6 +29,7 @@ import { DetailsComponent } from './components/details/details.component';
 import { ListComponent } from './components/admin/list/list.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
+import { NoticiasComponent } from './components/noticias/noticias.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { NosotrosComponent } from './components/nosotros/nosotros.component';
     CarouselComponent,
     NosotrosComponent,
     ComentsComponent,
-    ContactoComponent
+    ContactoComponent,
+    NoticiasComponent
    
   ],
   imports: [
