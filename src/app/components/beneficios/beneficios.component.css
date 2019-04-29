@@ -45,9 +45,9 @@ h2{
     color: #007bff;
     margin-bottom: 1rem;
     border-bottom: #007bff94 1px outset;
-    font-family:  'Poppins', sans-serif;
+    
 }
 .first {
-    margin: auto;
+    margin: 1rem auto auto auto;
     
   }
