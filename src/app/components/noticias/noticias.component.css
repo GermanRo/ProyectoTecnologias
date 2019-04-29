@@ -1,9 +1,29 @@
 @media (min-width: 18.75rem){
     .container {
         max-width: 115rem;
-    }}
+    }
+    img{
+      width: 100%;
+    }
+  
+  }
+
+  @media (max-width: 766px) {
+    .container {
+      max-width: 115rem;
+  }
+    img{
+      width: 100%;
+    }
+
+
+   }
+
   .container {
     margin: auto 2rem auto 2rem !important;
+  }
+  img{
+    width: 100%;
   }
   
   
@@ -24,7 +44,7 @@
     
   }
   .texto{
-    font-size: 17px;
+    font-size: 1rem;
     cursor: text;
     
   }

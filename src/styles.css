@@ -1,5 +1,10 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
+body{
+    width: 100%;
+}
+
+
 footer{
     background-color: #24429E;
     font-weight: 500;
