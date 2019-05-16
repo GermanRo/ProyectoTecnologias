@@ -1,63 +1,81 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-.bd-carousel{
-    width: auto;
-    height: auto;
-    margin: 7rem auto 7rem auto;
-    padding-left: 7rem;
-    padding-right: 7rem;
-  
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
+    .bd-carousel {
+        width: auto;
+        height: auto;
+        margin: 7rem auto 7rem auto;
+    }
 }
-hr {
-   height: 0.5px;
-   background-color: rgba(36, 67, 158, 0.336);
- }
-.header h1{
-  
-   font-family: 'Poppins', sans-serif;
-   font-weight: bold;
-   font-size: 8rem;
-   color: #24429E;
-   text-shadow: rgba(0, 0, 0, 0.377) 0.1em 0.1em 0.2em;
 
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 8rem;
+    }
+    .bd-carousel {
+        width: auto;
+        height: auto;
+        margin: 7rem auto 7rem auto;
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
 }
-.header{
-   text-align: center;
-   margin: auto auto 7rem auto;
+
+hr {
+    height: 0.5px;
+    background-color: rgba(36, 67, 158, 0.336);
 }
-#carousel{
-   -webkit-box-shadow: -2px 18px 56px -1px rgba(0,0,0,0.75);
--moz-box-shadow: -2px 18px 56px -1px rgba(0,0,0,0.75);
-box-shadow: -2px 18px 56px -1px rgba(0,0,0,0.75);
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #24429E;
+    text-shadow: rgba(0, 0, 0, 0.377) 0.1em 0.1em 0.2em;
 }
+
+.header {
+    text-align: center;
+    margin: auto auto 7rem auto;
+}
+
+#carousel {
+    -webkit-box-shadow: -2px 18px 56px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 18px 56px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -2px 18px 56px -1px rgba(0, 0, 0, 0.75);
+}
+
 .texto {
-   background-color: rgba(0,0,0,0.8);
-   border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 1rem;
 }
-  .conte{
-   margin-left: 20px;
-   margin-right: 20px;
-   margin-top: 25px;
-   margin-bottom: 25px;
+
+.conte {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     text-align: justify;
-  }
-  h4.title{
+}
+
+h4.title {
     font-weight: bold;
     font-size: 30px;
     color: #007bff;
     cursor: pointer;
     margin-bottom: 10px;
     border-bottom: #007bff94 1px outset;
-    
-  }
-  .texto{
+}
+
+.texto {
     font-size: 17px;
     cursor: text;
-    
-  }
-  
-  .badge{
+}
+
+.badge {
     float: right;
-  }
-  
-  /*************************************************/
-  
+}
+
+
+/*************************************************/

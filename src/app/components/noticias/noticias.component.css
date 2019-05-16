@@ -1,61 +1,58 @@
-@media (min-width: 18.75rem){
+@media only screen and (min-width: 768px) {
     .container {
         max-width: 115rem;
     }
-    img{
-      width: 100%;
+    img {
+        width: 100%;
     }
-  
-  }
+}
 
-  @media (max-width: 766px) {
+@media only screen and (max-width: 768px) {
     .container {
-      max-width: 115rem;
-  }
-    img{
-      width: 100%;
+        max-width: 115rem;
     }
+    img {
+        width: 100%;
+    }
+}
 
-
-   }
-
-  .container {
+.container {
     margin: auto 2rem auto 2rem !important;
-  }
-  img{
+}
+
+img {
     width: 100%;
-  }
-  
-  
-  .conte{
-   margin-left: 20px;
-   margin-right: 20px;
-   margin-top: 25px;
-   margin-bottom: 25px;
+}
+
+.conte {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     text-align: justify;
-  }
-  h4.title{
+}
+
+h4.title {
     font-weight: bold;
     font-size: 30px;
     color: #007bff;
     cursor: pointer;
     margin-bottom: 10px;
     border-bottom: #007bff94 1px outset;
-    font-family:  'Poppins', sans-serif;
-    
-  }
-  .texto{
+    font-family: 'Poppins', sans-serif;
+}
+
+.texto {
     font-size: 1rem;
     cursor: text;
-    
-  }
-  
-  .badge{
+}
+
+.badge {
     float: right;
-  }
-  .card{
-    -webkit-box-shadow: -4px 10px 39px -9px rgba(0,0,0,0.86);
-  -moz-box-shadow: -4px 10px 39px -9px rgba(0,0,0,0.86);
-  box-shadow: -4px 10px 39px -9px rgba(0,0,0,0.86);
-  }
-  
+}
+
+.card {
+    -webkit-box-shadow: -4px 10px 39px -9px rgba(0, 0, 0, 0.86);
+    -moz-box-shadow: -4px 10px 39px -9px rgba(0, 0, 0, 0.86);
+    box-shadow: -4px 10px 39px -9px rgba(0, 0, 0, 0.86);
+}
