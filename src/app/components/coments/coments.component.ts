@@ -1,5 +1,5 @@
 import { Router } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-coments',
@@ -12,5 +12,8 @@ export class ComentsComponent implements OnInit {
 
   ngOnInit() {
   }
+
+ 
+
 
 }
