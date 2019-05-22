@@ -1,6 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
-
+import { AngularFirestore } from  '@angular/fire/firestore' ;
+import { Observable } from 'rxjs';
 
 declare var jQuery: any;
 declare var $: any;
@@ -13,10 +14,8 @@ declare var $: any;
 })
 
 export class ContactoComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  items: Observable<any[]>;
+  constructor(db :  AngularFirestore) {
 
 
     $(document).ready(function () {
@@ -29,8 +28,8 @@ export class ContactoComponent implements OnInit {
         var ciudadi = $('#ciudad').val();
         var emaili = $('#email').val();
         var mensajei = $('#mensaje').val();
-
-        this.db.collection('contacto').add({
+        
+        this.items = db.collection('contacto').add({
 
           nombre: nombrei,
           apellido: apellidoi,
@@ -41,9 +40,17 @@ export class ContactoComponent implements OnInit {
 
         });
         $('input[type="text"]').val('');
-
+        window.alert("Información enviada");
       });
     });
+
+
+
+
+   }
+
+  ngOnInit() {
+
 
   }
 
