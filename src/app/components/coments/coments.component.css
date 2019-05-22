@@ -9,27 +9,107 @@
 
 * {
     margin: 0;
-    padding: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.comments-container {
-    margin: auto;
+h6 {
+    text-align: center;
 }
 
-h2 {
-    font-family: 'Poppins', sans-serif;
-    color: #007bff;
+@media only screen and (min-width: 768px) {
+    h2 {
+        font-weight: bold;
+        font-size: 2rem;
+        color: #007bff;
+        cursor: pointer;
+        margin-bottom: 0.7rem;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+    h6,
+    .comment-content {
+        font-size: 1.25rem;
+        cursor: text;
+    }
+    img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    input {
+        width: 30rem;
+        margin: 1rem 2rem 2rem 4rem;
+    }
+    button {
+        margin-left: 12rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-weight: bold;
+        font-size: 0.99rem;
+        color: #007bff;
+        cursor: pointer;
+        margin-bottom: 0.7rem;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+    h6,
+    .comment-content {
+        font-size: 0.7rem;
+        cursor: text;
+    }
+    img {
+        width: 100%;
+    }
+    input {
+        width: 15rem;
+        margin: 1rem 2rem 2rem 4rem;
+        font-size: 0.7rem;
+    }
+    button {
+        margin-left: 8rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .comments-container {
+        width: 29rem;
+        margin: 7rem auto 7rem auto;
+    }
+    .comments-list {
+        width: 29rem;
+        margin: 7rem auto 7rem auto;
+    }
+    .comment-main-level {
+        width: 29rem;
+        margin: 2rem auto 2rem auto;
+    }
+    .comments-list .comment-box {
+        width: 680px;
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 766px) {
+    .comments-container {
+        margin: 2rem auto 7rem auto;
+    }
+    .comments-list .comment-box {
+        margin: 2rem 3rem 2em 1rem;
+    }
+    .reply-list .comment-box {
+        margin: 2rem 3rem 2rem 1rem;
+    }
+    .comment-main-level {
+        margin: 1rem 2rem 1rem 1rem;
+    }
 }
 
 button {
     width: 6rem;
-}
-
-input {
-    width: 24rem;
 }
 
 a {
@@ -45,21 +125,6 @@ ul {
 /** ====================
  * Lista de Comentarios
  =======================*/
-
-@media only screen and (min-width: 768px) {
-    .comments-container {
-        width: 29rem;
-        margin: 7rem auto 7rem auto;
-    }
-    .comments-list {
-        width: 29rem;
-        margin: 7rem auto 7rem auto;
-    }
-    .comment-main {
-        width: 29rem;
-        margin: 7rem auto 7rem auto;
-    }
-}
 
 .comments-container {
     font-family: 'Roboto', Arial, Helvetica, Sans-serif, Verdana;
@@ -140,7 +205,6 @@ ul {
 }
 
 .reply-list {
-    padding-left: 88px;
     clear: both;
     margin-top: 15px;
 }
@@ -190,8 +254,6 @@ ul {
  ---------------------------*/
 
 .comments-list .comment-box {
-    width: 680px;
-    float: right;
     position: relative;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
@@ -218,9 +280,7 @@ ul {
     left: -12px;
 }
 
-.reply-list .comment-box {
-    width: 610px;
-}
+.reply-list .comment-box {}
 
 .comment-box .comment-head {
     background: #FCFCFC;
@@ -271,7 +331,6 @@ ul {
 .comment-box .comment-content {
     background: #FFF;
     padding: 12px;
-    font-size: 15px;
     color: #595959;
     -webkit-border-radius: 0 0 4px 4px;
     -moz-border-radius: 0 0 4px 4px;
@@ -300,22 +359,3 @@ ul {
 /** =====================
  * Responsive
  ========================*/
-
-@media only screen and (max-width: 766px) {
-    .comments-container {
-        width: 23.75rem;
-        margin: 7rem auto 7rem auto;
-    }
-    .comments-list .comment-box {
-        width: 23.75rem;
-        margin: 7rem auto 7rem auto;
-    }
-    .reply-list .comment-box {
-        width: 23.75rem;
-        margin: 7rem auto 7rem auto;
-    }
-    .comment-main {
-        width: 23.75rem;
-        margin: 7rem auto 7rem auto;
-    }
-}

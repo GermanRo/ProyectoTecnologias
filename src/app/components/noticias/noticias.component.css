@@ -46,39 +46,50 @@
     width: 100%;
 }
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    h4.title {
+        font-weight: bold;
+        font-size: 2rem;
+        color: #007bff;
+        cursor: pointer;
+        margin-bottom: 0.7rem;
+        border-bottom: #007bff94 1px outset;
+        font-family: 'Poppins', sans-serif;
+    }
+    .texto {
+        font-size: 1.25rem;
+        cursor: text;
+    }
+    img {
+        width: 100%;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+    }
+}
 
-@media only screen and (max-width: 768px) {}
-
-.container {}
-
-img {
-    width: 100%;
-    display: flex;
-    margin: 0 auto;
+@media only screen and (max-width: 768px) {
+    h4.title {
+        font-weight: bold;
+        font-size: 0.99rem;
+        color: #007bff;
+        cursor: pointer;
+        margin-bottom: 0.7rem;
+        border-bottom: #007bff94 1px outset;
+        font-family: 'Poppins', sans-serif;
+    }
+    .texto {
+        font-size: 0.7rem;
+        cursor: text;
+    }
+    img {
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 }
 
 .conte {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    text-align: justify;
-}
-
-h4.title {
-    font-weight: bold;
-    font-size: 30px;
-    color: #007bff;
-    cursor: pointer;
-    margin-bottom: 10px;
-    border-bottom: #007bff94 1px outset;
-    font-family: 'Poppins', sans-serif;
-}
-
-.texto {
-    font-size: 1rem;
-    cursor: text;
+    margin-top: 1.2rem;
 }
 
 .badge {

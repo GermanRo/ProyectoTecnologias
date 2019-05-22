@@ -1,27 +1,87 @@
 .contenedor {
     margin: auto;
-    padding-left: 3rem;
-}
-
-img {
-    border-radius: 15px;
-    width: 100%;
-}
-
-h1,
-h2,
-h6,
-ul,
-li {
-    text-align: center;
-}
-
-p {
-    text-align: justify;
 }
 
 .content {
-    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+img {
+    border-radius: 12px;
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    h2 {
+        font-weight: bold;
+        font-size: 2rem;
+        color: #007bff;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        margin: auto;
+        text-align: center;
+    }
+    h3 {
+        font-weight: bold;
+        font-size: 2rem;
+        color: #007bff;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+    .first,
+    p,
+    h6 {
+        font-size: 1.25rem;
+        cursor: text;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .card {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-weight: bold;
+        font-size: 0.99rem;
+        color: #007bff;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        margin: auto;
+        text-align: center;
+    }
+    h3 {
+        font-weight: bold;
+        font-size: 0.99rem;
+        color: #007bff;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+    .first,
+    p,
+    h6 {
+        font-size: 0.7rem;
+        cursor: text;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .card {
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
+}
+
+.content {
     -webkit-box-shadow: 6px 7px 36px 4px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 6px 7px 36px 4px rgba(0, 0, 0, 0.75);
     box-shadow: 6px 7px 36px 4px rgba(0, 0, 0, 0.75);
@@ -49,14 +109,4 @@ img {
     -webkit-box-shadow: 6px 7px 36px 4px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 6px 7px 36px 4px rgba(0, 0, 0, 0.75);
     box-shadow: 6px 7px 36px 4px rgba(0, 0, 0, 0.75);
-}
-
-h2 {
-    color: #007bff;
-    margin-bottom: 1rem;
-    border-bottom: #007bff94 1px outset;
-}
-
-.first {
-    margin: 1rem auto auto auto;
 }
