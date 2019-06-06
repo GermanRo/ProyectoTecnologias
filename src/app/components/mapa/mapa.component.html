@@ -14,7 +14,96 @@
 
 </div>
 
-<div id="map"></div>
+<agm-map [latitude]="lat3" [longitude]="lng3" [zoom]="zoom" [disableDefaultUI]="false" [zoomControl]="false" (mapClick)="mapClicked($event)">
+
+
+    <agm-marker [latitude]="lat" [longitude]="lng">
+
+        <agm-info-window [disableAutoPan]="true">
+            <h4>Grin</h4>
+            <div class="info-content">
+                Creemos que la unión hace la fuerza, es por eso que buscamos <br>que nuestra comunidad crezca y se mantenga unida mediante <br>una comunicación constante. </div>
+        </agm-info-window>
+
+    </agm-marker>
+
+    <agm-marker [latitude]="lat2" [longitude]="lng2">
+
+        <agm-info-window [disableAutoPan]="true">
+            <h4>Muvo</h4>
+            <div class="info-content">
+                Creemos que la unión hace la fuerza, es por eso que buscamos <br>que nuestra comunidad crezca y se mantenga unida mediante <br>una comunicación constante. </div>
+        </agm-info-window>
+
+    </agm-marker>
+    <agm-marker [latitude]="lat3" [longitude]="lng3">
+
+        <agm-info-window [disableAutoPan]="true">
+            <h4>Biking Bogotá</h4>
+            <div class="info-content">
+                Con opciones de 4hs y 8hs es la opción perfecta si estás<br> en una conexión aérea o simplemente tienes unas pocas horas para conocer la ciudad, además, somos<br> la oficina de alquiler más cercana a lugares como el Aeropuerto ElDorado
+                o el Parque Simón Bolívar. </div>
+        </agm-info-window>
+
+    </agm-marker>
+    <agm-marker [latitude]="lat4" [longitude]="lng4">
+
+        <agm-info-window [disableAutoPan]="true">
+            <h4>Muvo</h4>
+            <div class="info-content">
+                Creemos que la unión hace la fuerza, es por eso que buscamos <br>que nuestra comunidad crezca y se mantenga unida mediante <br>una comunicación constante. </div>
+        </agm-info-window>
+
+    </agm-marker>
+    <agm-marker [latitude]="lat5" [longitude]="lng5">
+
+        <agm-info-window [disableAutoPan]="true">
+            <h4>Biking Bogotá</h4>
+            <div class="info-content">
+                Con opciones de 4hs y 8hs es la opción perfecta si estás<br> en una conexión aérea o simplemente tienes unas pocas horas para conocer la ciudad, además, somos<br> la oficina de alquiler más cercana a lugares como el Aeropuerto ElDorado
+                o el Parque Simón Bolívar. </div>
+        </agm-info-window>
+
+    </agm-marker>
+    <agm-marker [latitude]="lat6" [longitude]="lng6">
+
+        <agm-info-window [disableAutoPan]="true">
+            <h4>Grin</h4>
+            <div class="info-content">
+                Creemos que la unión hace la fuerza, es por eso que buscamos <br>que nuestra comunidad crezca y se mantenga unida mediante <br>una comunicación constante. </div>
+        </agm-info-window>
+
+    </agm-marker>
+    <agm-marker [latitude]="lat7" [longitude]="lng7">
+
+        <agm-info-window [disableAutoPan]="true">
+            <h4>Grin</h4>
+            <div class="info-content">
+                Creemos que la unión hace la fuerza, es por eso que buscamos <br>que nuestra comunidad crezca y se mantenga unida mediante <br>una comunicación constante. </div>
+        </agm-info-window>
+
+    </agm-marker>
+    <agm-marker [latitude]="lat8" [longitude]="lng8">
+
+        <agm-info-window [disableAutoPan]="true">
+            <h4>Muvo</h4>
+            <div class="info-content">
+                Creemos que la unión hace la fuerza, es por eso que buscamos <br>que nuestra comunidad crezca y se mantenga unida mediante <br>una comunicación constante. </div>
+        </agm-info-window>
+
+    </agm-marker>
+    <agm-marker [latitude]="lat9" [longitude]="lng9">
+
+        <agm-info-window [disableAutoPan]="true">
+            <h4>Biking Bogotá</h4>
+            <div class="info-content">
+                Con opciones de 4hs y 8hs es la opción perfecta si estás<br> en una conexión aérea o simplemente tienes unas pocas horas para conocer la ciudad, además, somos<br> la oficina de alquiler más cercana a lugares como el Aeropuerto ElDorado
+                o el Parque Simón Bolívar. </div>
+        </agm-info-window>
+
+    </agm-marker>
+
+</agm-map>
 
 <div class="contenedor container-fluid px-4">
     <h2><b>Compañias de alquiler certificadas.</b></h2><br>

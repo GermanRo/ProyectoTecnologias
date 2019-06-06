@@ -12,6 +12,8 @@ import {AngularFireDatabaseModule} from '@angular/fire/database';
 import {environment} from 'src/environments/environment';
 
 
+import { CommonModule } from '@angular/common';
+
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {ReactiveFormsModule} from '@angular/forms';
@@ -33,6 +35,7 @@ import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { NoticiasComponent } from './components/noticias/noticias.component';
 import { MapaComponent } from './components/mapa/mapa.component';
 import { BeneficiosComponent } from './components/beneficios/beneficios.component';
+import { AgmCoreModule } from '@agm/core';
 
 
 @NgModule({
@@ -65,7 +68,10 @@ import { BeneficiosComponent } from './components/beneficios/beneficios.componen
     NgbModule,
     ReactiveFormsModule,
     FormsModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ'
+    })
 
   ],
   providers: [AngularFireAuth,AngularFirestore],
