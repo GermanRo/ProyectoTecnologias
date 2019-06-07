@@ -70,7 +70,7 @@ import { AgmCoreModule } from '@agm/core';
     FormsModule,
     AngularFireStorageModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ'
+      apiKey: 'AIzaSyCv_mA3khiobRHB2tfMWrShMijiHqBcLRM'
     })
 
   ],
