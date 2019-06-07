@@ -1,7 +1,9 @@
 .container {
     margin-top: 8rem;
 }
-
+.containerDOS {
+    margin-left: 8rem;
+}
 .info-window {
     font-family: 'Montserrat', sans-serif;
 }
@@ -24,6 +26,17 @@ img {
     width: 100%;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
+}
+.dada {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #007bff;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.cartita{
+    text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -78,6 +91,7 @@ img {
         font-family: 'Poppins', sans-serif;
         text-align: center;
     }
+  
     .first,
     p,
     h6 {
